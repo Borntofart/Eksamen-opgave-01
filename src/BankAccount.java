@@ -24,7 +24,6 @@ public class BankAccount {
     public double deposit(double amount) {
         balance = balance + amount;
         System.out.println("Du har sat " + balance + " ind på din konto");
-        System.out.println(" din nye balance er " + balance);
         return balance;
     }
 
@@ -51,7 +50,9 @@ public class BankAccount {
         return this.balance;
     }
 
-
+    private void showbalance(BankAccount target) {
+        System.out.println("Din balance er " + balance);
+    }
 
 
 }

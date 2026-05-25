@@ -5,7 +5,7 @@ public class main {
         BankAccount kontotess = new BankAccount("Tess", 50000);
 
         kontolucas.deposit(1000);
-
+        kontolucas.
 
     }
 }
