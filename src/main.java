@@ -5,7 +5,8 @@ public class main {
         BankAccount kontotess = new BankAccount("Tess", 50000);
 
         kontolucas.deposit(1000);
-        kontolucas.
+        kontolucas.withdraw(5000);
 
+        kontolucas.transfer(kontotess, 3500);
     }
 }

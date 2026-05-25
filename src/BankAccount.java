@@ -1,7 +1,7 @@
 public class BankAccount {
 
     //Constructor
-    BankAccount(String owner, double belance){
+    BankAccount(String owner, double balance){
         this.owner = owner;
         this.balance = balance;
 
@@ -17,13 +17,15 @@ public class BankAccount {
     }
 
     public String getOwner() {
+
         return owner;
     }
 
 //metoder
     public double deposit(double amount) {
+        System.out.println("Du har sat " + amount + " ind på din konto");
         balance = balance + amount;
-        System.out.println("Du har sat " + balance + " ind på din konto");
+        showBalance();
         return balance;
     }
 
@@ -44,13 +46,13 @@ public class BankAccount {
         } else {
             this.balance = this.balance - amount;
             target.balance = target.balance + amount;
-            System.out.println("overførsel klaret! " + this + "gav " + amount + " til " + target);
+            System.out.println("overførsel klaret! " + this.owner + " gav " + amount + " til " + target.owner);
         }
 
         return this.balance;
     }
 
-    private void showbalance(BankAccount target) {
+    public void showBalance() {
         System.out.println("Din balance er " + balance);
     }
 
