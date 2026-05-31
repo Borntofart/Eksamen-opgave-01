@@ -13,6 +13,7 @@ public class BankAccount {
 
 //getters
     private double getBalance() {
+
         return balance;
     }
 
