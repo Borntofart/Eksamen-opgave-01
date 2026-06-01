@@ -12,12 +12,12 @@ public class BankAccount {
     double balance;
 
 //getters
-    private double getBalance() {
+    public double getBalance() {
 
         return balance;
     }
 
-    private String getOwner() {
+    public String getOwner() {
 
         return owner;
     }
